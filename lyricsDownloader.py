@@ -36,14 +36,13 @@ while(keywords['input'].lower()=='y'):
         page = r.text.encode('ascii','ignore') # converting to ascii
         r.close()
         soup = BeautifulSoup(page)
-        whole = soup.findAll("div",{'style':keywords['style']})
+        whole = soup.find("div",{'style':keywords['style']})
         fileName = raw_input("enter the file name to which you wanna save: ")
         
         with open(keywords['drive']+fileName+'.txt','w+') as f:
-            f.write(whole[0].text)
+            f.write(str(whole.text))
         print "your file has been saved to "+keywords['drive']+fileName+'.txt'
         print
-        #print whole[0].text
     else:
         print "Sorry, couldn't locate on server"
 
