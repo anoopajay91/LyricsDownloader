@@ -16,7 +16,9 @@ would want to save. Ex: C:// or D://
 --------------------------------------------------------------------------
 
 
-For those who do not have python, download the zip file, extract and click/run the lyricsDownloader.exe file present inside lyricsDownloader_exe folder. File will be saved to C://
+For those who do not have python, download the zip file, extract and click/run the lyricsDownloader.exe file present inside lyricsDownloader_exe folder. 
+
+The lyrics file will be saved to C://
 
 
 
